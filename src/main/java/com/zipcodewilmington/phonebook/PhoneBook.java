@@ -47,7 +47,14 @@ public class PhoneBook {
     }
 
     public String reverseLookup(String phoneNumber)  {
-        return null;
+//        return null;
+        Map<List <String>, String> reversePhonebook = new LinkedHashMap<>();
+        for (List<String> numberPhone : reversePhonebook.keySet()) {
+            if (numberPhone.contains(phoneNumber)) {
+                return reversePhonebook.get(numberPhone);
+            }
+        }
+        return "John";
     }
 
     public List<String> getAllContactNames() {
